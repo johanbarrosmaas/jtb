@@ -6,8 +6,3 @@ karma.conf.js
 rollup.config.js
 tsconfig.json
 test.tsconfig.json
-<<<<<<< HEAD
-
-*-lock.json
-=======
->>>>>>> a78a822... ajustando para trabalhar com continous integration
