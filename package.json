@@ -1,0 +1,36 @@
+{
+  "name": "jtb",
+  "version": "1.0.0",
+  "description": "Johan's toolbox",
+  "main": "./dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [ "./dist" ],
+  "scripts": {
+    "test": "jest",
+    "posttest": "tsc --build",
+    "prepare": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johanbarrosmaas/jtb.git"
+  },
+  "author": "Johan Barros Maas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johanbarrosmaas/jtb/issues"
+  },
+  "homepage": "https://github.com/johanbarrosmaas/jtb#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.7",
+    "jest": "^26.2.1",
+    "ts-jest": "^26.1.4",
+    "typescript": "^3.9.7"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": ["ts", "tsx", "js"]
+  }
+}
