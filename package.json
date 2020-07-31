@@ -6,8 +6,9 @@
   "types": "dist/index.d.ts",
   "files": [ "./dist" ],
   "scripts": {
-    "test": "jest",
-    "posttest": "tsc --build",
+    "build": "tsc -p tsconfig.prod.json",
+    "pretest": "npm cache clean --force",
+    "test": "jest --coverage",
     "prepare": "npm test"
   },
   "repository": {
