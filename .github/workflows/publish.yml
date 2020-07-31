@@ -1,12 +1,12 @@
 # This workflow will do a clean install of node dependencies, build the source code with different versions of node
 
-name: Build belfix-gc
+name: Test and Build JTB
 
 on:
   push:
     branches: [ beta ]
   pull_request:
-    branches: [ beta ]
+    branches: [ beta, master ]
 
 jobs:
   build:
