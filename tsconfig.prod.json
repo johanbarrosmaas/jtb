@@ -1,0 +1,16 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "removeComments": true,
+      "sourceMap": false,
+      "target": "es5",
+      "declaration": true,
+      "declarationDir": "./dist",
+      "outDir": "./dist"
+  },
+  "lib": [ "es2015.promise"],
+  "include": [ "src/**/*.ts" ],
+  "exclude": [ "src/**/*spec.ts","src/test.ts" ]
+}

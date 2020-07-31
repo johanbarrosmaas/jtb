@@ -6,5 +6,4 @@ karma.conf.js
 rollup.config.js
 tsconfig.json
 test.tsconfig.json
-
 *-lock.json
