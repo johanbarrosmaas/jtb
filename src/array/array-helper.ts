@@ -1,11 +1,6 @@
-export interface IMappedRecord<K> {
-    customData: any;
-    items: K[];
-}
-
 export function mapBy<T,K>(arr: Array<T>, mapBy: string | string[], mapFn?: (item: T, items: K) => K) {
-    if (!(arr instanceof Array)) return new Map<T,IMappedRecord>();
-    if (arr.length == 0) return new Map<T,IMappedRecord>();
+    if (!(arr instanceof Array)) return new Map<T,K>();
+    if (arr.length == 0) return new Map<T,K>();
     
     if (mapFn == null) mapFn = (item: T, items: K) => {
         if (items == null) return new Array(item);
