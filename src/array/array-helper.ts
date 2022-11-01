@@ -3,7 +3,7 @@ export interface IMappedRecord<K> {
     items: K[];
 }
 
-export function mapBy<T,K>(arr: Array<T>, mapBy: string | string[], mapFn: (item: T, items: K) => K) {
+export function mapBy<T,K>(arr: Array<T>, mapBy: string | string[], mapFn?: (item: T, items: K) => K) {
     if (!(arr instanceof Array)) return new Map<T,IMappedRecord>();
     if (arr.length == 0) return new Map<T,IMappedRecord>();
     
